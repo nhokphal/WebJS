@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Colors</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1 id="hello"> Hello! </h1>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => { // function() notation, instead of function we cant ues =>
+                document.querySelector('select').onchange = function() {
+                    document.querySelector('#hello').style.color = this.value; // "this" use to get value in current value, in change.
+                }             
+
+
+                // change color to red
+                //document.querySelectorAll('button').forEach(button => { // (function(button)
+                  //  button.onclick = function() {
+                        //document.querySelector('#hello').style.color = button.dataset.color; // access color #red in name
+                    //}
+               // }); 
+            });
+           
+        </script>
+        <select>
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="grey">Grey</option>
+            <option value="pink">Pink</option>
+        
+        </select>   
+        <!-- <button data-color="red"> Red</button>
+        <button data-color="blue">Blue</button>
+         <button data-color="green">Green</button> -->
+                                    
+                                    
+        <script src="" async defer></script>
+    </body>
+</html>
